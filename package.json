@@ -20,7 +20,7 @@
   "devDependencies": {
     "@cypress/vite-dev-server": "~2.1",
     "@cypress/vue": "~3.0",
-    "@tailwindcss/aspect-ratio": "~0.2",
+    "@tailwindcss/aspect-ratio": "~0.3",
     "@tailwindcss/forms": "~0.3",
     "@tailwindcss/line-clamp": "~0.2",
     "@tailwindcss/typography": "~0.4",
