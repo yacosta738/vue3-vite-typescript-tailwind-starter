@@ -24,7 +24,7 @@
     "@tailwindcss/forms": "~0.3",
     "@tailwindcss/line-clamp": "~0.2",
     "@tailwindcss/typography": "~0.4",
-    "@typescript-eslint/eslint-plugin": "~4",
+    "@typescript-eslint/eslint-plugin": "~5",
     "@typescript-eslint/parser": "~4",
     "@vitejs/plugin-vue": "~1.9",
     "@vue/eslint-config-standard": "~6.1",
