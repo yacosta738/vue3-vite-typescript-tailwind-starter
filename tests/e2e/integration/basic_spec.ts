@@ -4,6 +4,6 @@ describe('Homepage', () => {
   it('Shows correct text', () => {
     cy.visit('/')
 
-    cy.contains('h2', 'Hello World Component')
+    cy.contains('h1', 'Vue 3, Vite, TypeScript & Tailwind CSS')
   })
 })

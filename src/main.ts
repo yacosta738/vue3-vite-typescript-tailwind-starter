@@ -1,18 +1,33 @@
 import { createApp } from 'vue'
-import BaseTemplate from '@/pages/BaseTemplate.vue'
+import { createRouter, createWebHistory } from 'vue-router'
 import App from './App.vue'
-import router from './router'
-import { createHead } from '@vueuse/head'
-import { store } from './store'
-import './assets/index.postcss'
+import { routes } from './routes'
+import './index.css'
 
-const head = createHead()
 const app = createApp(App)
 
-app.component('BaseTemplate', BaseTemplate)
+const router = createRouter({
+  history: createWebHistory(),
+  routes: import.meta.hot ? [] : routes,
+})
 
-app.use(store)
+if (import.meta.hot) {
+  const removeRoutes = []
+
+  for (const route of routes) {
+    removeRoutes.push(router.addRoute(route))
+  }
+}
+if (import.meta.hot) {
+  import.meta.hot?.accept('./routes.ts', ({ routes }) => {
+    for (const removeRoute of removeRoutes) removeRoute()
+    removeRoutes = []
+    for (const route of routes) {
+      removeRoutes.push(router.addRoute(route))
+    }
+    router.replace('')
+  })
+}
+
 app.use(router)
-app.use(head)
-
 app.mount('#app')

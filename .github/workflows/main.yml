@@ -64,6 +64,9 @@ jobs:
       - name: Start Vite devserver
         run: yarn start
 
+      - name: Lint fix
+        run: yarn lint:fix
+
       - name: Run tests
         run: yarn test:ci
 
