@@ -151,10 +151,10 @@
     debug "^4.3.2"
     get-port "^5.1.1"
 
-"@cypress/vue@~3.0":
-  version "3.0.5"
-  resolved "https://registry.yarnpkg.com/@cypress/vue/-/vue-3.0.5.tgz#a2a3ab838991bb11ef800751962d28dc96b4b331"
-  integrity sha512-v6uVMEP04mCJGfc9/oH2ZIYPZ3fRwiOSzjtQ7jT0O2Lt2+SkoEWbDymG0pUFMRM1W8oc7Ep1hqEgZjIop7RXgw==
+"@cypress/vue@~3.1":
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/@cypress/vue/-/vue-3.1.1.tgz#0e6b4a1cb972d2f271ba05209c55e9101a96d0a4"
+  integrity sha512-wD1vunuPFPLC8FZtgwdq+mcSEOs27qquuJJdGcY8aAN0y38rqYuuaj+N4UxKoAjhkSwthaOeZehjBtvDvv9C6w==
   dependencies:
     "@cypress/mount-utils" "1.0.2"
     "@vue/test-utils" "^2.0.0-rc.10"
